@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  font-family: Geist, Inter, system-ui, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg:        hsl(150 22% 4%);
+  --bg2:       hsl(150 20% 6%);
+  --surface:   hsl(150 18% 8%);
+
+  --border:    hsl(0 0% 100% / 0.07);
+  --border-hi: hsl(0 0% 100% / 0.14);
+
+  --green:     hsl(142 71% 45%);
+  --green-dim: hsl(142 71% 45% / 0.12);
+  --green-glow:hsl(142 71% 45% / 0.25);
+
+  --blue:      hsl(217 91% 60%);
+  --blue-dim:  hsl(217 91% 60% / 0.12);
+  --blue-glow: hsl(217 91% 60% / 0.25);
+
+  --white:     hsl(0 0% 100%);
+  --muted:     hsl(0 0% 100% / 0.45);
+  --faint:     hsl(0 0% 100% / 0.18);
+}
+
+@theme {
+  --font-geist: 'Geist', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+.hero-grid {
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(hsl(142 71% 45% / 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(142 71% 45% / 0.15) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 0%, transparent 80%);
+  animation: gridShift 10s linear infinite;
+}
+
+@keyframes gridShift {
+  from { background-position: 0 0; }
+  to   { background-position: 60px 60px; }
+}
