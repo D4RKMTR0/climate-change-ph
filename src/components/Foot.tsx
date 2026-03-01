@@ -1,5 +1,3 @@
-import FadeIn from './ui/FadeIn';
-
 function Footer() {
   return (
     <footer className="border-t border-white/7 py-16 px-6">
