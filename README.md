@@ -1,73 +1,49 @@
-# React + TypeScript + Vite
+# Climate Change PH
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and modern single-page website diving into the laws, programs and history behind the Philippines' fight against climate change.
 
-Currently, two official plugins are available:
+Build as a schoo project for Araling Panlipunan, 8th Grade.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## React Compiler
+[climate-change-ph.vercel.app](https://climate-change-ph.vercel.app)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- [React](https://react.dev) — UI library
+- [TypeScript](https://typescriptlang.org) — type safety
+- [Tailwind CSS v4](https://tailwindcss.com) — styling
+- [Vite](https://vitejs.dev) — build tool
+- [Lucide React](https://lucide.dev) — icons
+- [Vercel](https://vercel.com) — hosting
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Animated hero section with moving grid background
+- Scroll-triggered fade-in animations
+- Laws grid with interactive tags
+- Programs section with numbered cards
+- Historical timeline
+- Scroll progress indicator
+- Fully responsive
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Running Locally
+
+```bash
+git clone https://github.com/yourusername/kalikasan
+cd kalikasan
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# Sources
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- [Climate Change Commission](https://climate.gov.ph)
+- [Official Gazette](https://officialgazette.gov.ph)
+- [Department of Environment and Natural Resources](https://denr.gov.ph)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Credits
+
+Built by Brent Adrian M. Fogarty · Grade 8 - Bohr
+
