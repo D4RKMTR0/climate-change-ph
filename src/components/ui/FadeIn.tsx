@@ -23,7 +23,7 @@ function FadeIn({ children, delay = 0, duration = 700, distance = 24, direction 
           observer.disconnect();
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.3 }
     );
 
     if (ref.current) observer.observe(ref.current);

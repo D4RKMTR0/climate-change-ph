@@ -104,7 +104,7 @@ function History() {
 
           <div className="flex flex-col">
             {events.map((event, i) => (
-              <FadeIn key={i} direction="left" distance={24} delay={i * 80} duration={600}>
+              <FadeIn key={i} direction="left" distance={24} delay={i * 20} duration={600}>
                 <div className="relative pl-8 pb-12 group">
                     <div className={`absolute left-0 top-1.5 w-3 h-3 rounded-full -translate-x-1/2 border-2 transition-all duration-300
                         ${event.color === 'green'
